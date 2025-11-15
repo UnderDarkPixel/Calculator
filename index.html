@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.png">
+</head>
+<body>
+    
+    <div class="global_wrapper">
+
+        <div class="global_container">
+
+            <input class="input" readonly>
+
+            <div class="section_containers">
+                <button class="button section" onclick="cls()">c</button>
+                <button class="button section">+/-</button>
+                <button class="button section" onclick="Allclear()">ac</button>
+            </div>
+            <div class="numberBTN_containers">
+                <button onclick ="append('1')" class="button">1</button>
+                <button onclick ="append('2')" class="button">2</button>
+                <button onclick ="append('3')" class="button">3</button>
+                <button onclick ="append('4')" class="button">4</button>
+                <button onclick ="append('5')" class="button">5</button>
+                <button onclick ="append('6')" class="button">6</button>
+                <button onclick ="append('7')" class="button">7</button>
+                <button onclick ="append('8')" class="button">8</button>
+                <button onclick ="append('9')" class="button">9</button>
+                <button onclick ="append('0')" class="button">0</button>
+                <button onclick ="append('00')" class="button">00</button>
+                <button onclick ="Values()" class="button equals">=</button>
+            </div>
+            <div class="operators_containers">
+                <button class="button oper" onclick="append('+')">+</button>
+                <button class="button oper" onclick="append('-')">-</button>
+                <button class="button oper" onclick="append('*')">x</button>
+                <button class="button oper" onclick="append('/')">÷</button>
+                <button class="button oper" onclick="append('%')">%</button>
+            </div>
+        </div>
+
+        <div class="bg"></div>
+
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>

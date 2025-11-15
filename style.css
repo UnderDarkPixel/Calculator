@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.global_wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./BGjpg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.global_container {
+    width: 380px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 20px;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.bg {
+    width: 380px;
+    height: 600px;
+    padding: 20px;
+    background: rgb(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    border-radius: 30px;
+    z-index: 0;
+}
+
+.input {
+    width: 80%;
+    height: 80px;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 35px;
+    background-color: #000;
+    opacity: 0.6;
+    font-size: 30px;
+    color: white;
+    text-align: end;
+}
+
+.section_containers {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 40px;
+    position: absolute;
+    top: 122px;
+    left: 10px;
+}
+
+.section {
+    background-color: #474747 !important;
+}
+
+.numberBTN_containers {
+    width: 280px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.operators_containers {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    gap: 18px;
+    flex-wrap: nowrap;
+    position: absolute;
+    right: 20px;
+    top: 125px;
+}
+
+.oper {
+    background-color: #f0991f !important;
+}
+
+
+
+.button {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+
+    border-radius: 50%;
+    border: none;
+    font-size: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #22201e;
+    color: #fff;
+    position: relative;
+    z-index: 8;
+}
+
+.button:hover {
+    filter: brightness(0.8);
+}
+
+.equals {
+    background-color: #f0991f;
+}
+
+@media (max-width: 500px) {
+    .button {
+        width: 60px;
+        height: 60px;
+        font-size: 15px;
+    }
+}
