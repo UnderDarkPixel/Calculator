@@ -21,7 +21,7 @@ function Allclear() {
 }
 
 function cls() {
-    if(input.value < 0 && isType === false) {
+    if(isType === false) {
         input.value = "";
     }
     else {
